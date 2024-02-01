@@ -1,6 +1,7 @@
 const envUtils = require('./utils/envUtils');
 const scanCommand = require('./commands/scan');
 const fixCommand = require('./commands/fix');
+const csvUtil = require('./utils/csvUtils');
 
 // Prompt user for the folder/location path
 const folderPath = scanCommand.promptFolderPath();
@@ -27,3 +28,7 @@ if (checkAgain) {
   // Display the table again after fixing the environment variables
   scanCommand.displayTable(envVariables, parsedEnv);
 }
+
+// Write the result to a CSV file
+const csvFilePath = 'env_variables_location.csv';
+csvUtil.writeToCSV(csvFilePath, envVariablesArray)
