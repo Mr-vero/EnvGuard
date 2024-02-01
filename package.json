@@ -1,14 +1,25 @@
 {
-  "name": "env-compare",
+  "name": "EnvGuard",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "A tool to check and fix missing environment variables in a project.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "environment",
+    "variables",
+    "dotenv",
+    "config",
+    "configuration",
+    "validation",
+    "fixer",
+    "CLI",
+    "Node.js"
+  ],
+  "author": "Irvan (Mr.vero)",
+  "license": "MIT",
   "devDependencies": {
     "dotenv": "^16.4.1"
   },
